@@ -12,8 +12,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 assertresult=""
 url = r"https://jw.ahu.edu.cn"
 
-id="E22314155" #input your student.id
-password="Czh671272"#input your student.password
+id="E22814520" #input your student.id
+password="12345678"#input your student.password
 select_class_name="ZX36268"#input the class id you select
 target_class_id="202520262-ZX36268.001"#input the course's class_id
 target_teacher="王逍"#input the course's teacher

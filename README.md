@@ -16,9 +16,9 @@ AHU普通课程自动待机抢课
 
 下载完成后配置进系统环境变量
 
-3.unittest和selenium框架以及其他所需都用pip install +...下载
+3.pytest和selenium框架以及其他所需都用pip install +...下载
 
-在此点击测试
-<img width="410" height="139" alt="image" src="https://github.com/user-attachments/assets/d36b634b-8af6-4e50-a1d8-8fe71f2601e3" />
+终端运行python -m pytest test_course_snatching.py
+
 
 

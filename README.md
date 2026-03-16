@@ -1,24 +1,37 @@
-AHU普通课程自动待机抢课
+# AHU 普通课程自动待机抢课
 
-注意事项：
-1.你需要填写的内容：学号，密码，课程编号，上课班级编号，老师名称，抢课开始时间
-<img width="1132" height="204" alt="image" src="https://github.com/user-attachments/assets/713bc66c-0354-4a0c-8383-80914a4e0e08" />
-（学号密码为新教务系统主页登陆密码）
+本脚本旨在实现安徽大学（AHU）教务系统课程的自动化抢课功能。
 
-2.注意提前清除主页通知
+---
 
-运行环境：
-1.Chrome浏览器版本145.0.7632.160
+## ⚠️ 注意事项
 
-2.Chrome浏览器驱动chromedriver.exe
+1. **必要配置**：你需要修改代码中以下参数：
+   - **学号**（新教务系统主页登录账号）
+   - **密码**（确保为新教务系统主页账号密码登录密码）
+   - **课程编号**
+   - **上课班级编号**
+   - **老师名称**
+   - **抢课开始时间**
 
-下载地址：https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win64/chromedriver-win64.zip
+   *(参考下方配置位置：)*
+   ![配置截图](https://github.com/user-attachments/assets/713bc66c-0354-4a0c-8383-80914a4e0e08)
 
-下载完成后配置进系统环境变量
+2. **操作提示**：运行前请确保已手动**清理教务系统主页的弹窗通知**。
 
-3.pytest和selenium框架以及其他所需都用pip install +...下载
+---
 
-终端运行python -m pytest test_course_snatching.py
+## 🛠️ 运行环境准备
 
+### 1. 浏览器要求
+* **浏览器版本**：Chrome 145.0.7632.160
 
+### 2. WebDriver 配置
+* **下载地址**：[chromedriver-win64.zip](https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win64/chromedriver-win64.zip)
+* **安装步骤**：下载完成后，请将 `chromedriver.exe` 所在的路径添加至系统的 **环境变量 (PATH)** 中。
 
+### 3. 依赖安装
+请在终端中运行以下命令以安装必要的 Python 库：
+```bash
+pip install selenium
+pip install pytest
